@@ -143,3 +143,7 @@ footer {
 main {
     height: 900px;
 }
+.right-column a:hover {
+    color: #fa255e;
+    background-color: #000000;
+}
