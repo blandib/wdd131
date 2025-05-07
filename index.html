@@ -3,18 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>WDD 131 Dynamic Web Fundamentals - Blandine Bukasa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals |Blandine Bukasa Lusanba |I build on my Web Fundamentals and programming knowledge to advance my JavaScript skills, creating dynamic, interactive websites. I learn to make pages respond to user actions, update content in real time, and enhance user experiences. By the end of the course, I'll be ready to craft responsive web applications that truly stand out." />
+    <meta name="author" content="Blandine Bukasa">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Blandine Bukasa Lusamba</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link">Scripture</a></li>
+                <li><a href="https://byupw.instructure.com/" class="nav-link">Canvas</a></li>
+                <li><a href="https://linkedin.com" class="nav-link">LinkedIn</a></li>
+                <li><a href="#" class="nav-link">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>I build on my Web Fundamentals and programming knowledge to advance my JavaScript skills, creating dynamic, interactive websites. I learn to make pages respond to user actions, update content in real time, and enhance user experiences. By the end of the course, I'll be ready to craft responsive web applications that truly stand out.</p>
+    
+    <main class="grid-container"> 
+        <div class="left-column">
+            <section class="top">
+                <h2>About Me</h2>
+                <img class="mypicture"  src="images/blandine.jpg" alt="My Picture">
+                <p class="paragraph">My name is Blandine, and I live in South Africa. My coding journey began with BYU-Pathway Connect, where I am developing my skills in web development. I am passionate about building websites and continuously learning along the way, further strengthening my technical expertise. I am currently pursuing multiple certifications, including web development, to expand my knowledge and skills in the field.</p>
+            </section>
+            <section class="bottom">
+                <h3>South Africa</h3>
+                <figure class="Flag">
+                    <img  src="images/South-African-Flag.png" alt="South African Flag">
+                    <figcaption>South African Flag</figcaption>
+                  </figure>
+                <p class="paragraph">South Africa: A Brief Overview South Africa, located at the southern tip of Africa, is known for its diverse culture, rich history, and strong economy. It has eleven official languages and is home to iconic landmarks such as Table Mountain and Kruger National Park. The country plays a significant role in global trade, particularly in the mining sector.</p>
+            </section>
+        </div>
+        
+        <div class="right-column">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.codecademy.com/learn">CodeCademy</a></li>
+                <li><a href="https://www.freecodecamp.org/learn/">freecodecamp</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://stackoverflow.com/">Stackoverflow</a></li>
+                <li><a href="https://javascript.info/">JAVASCRIPT.INFO</a></li>
+                <li><a href="https://dev.to/">Dev.to community</a></li>
+            </ul>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2025 My Website</p>
+        <p>&copy; <span id="currentyear"></span> Blandine Bukasa Lusamba | South Africa</p>
+        <p id="lastModified"></p>
     </footer>
+
+    <script src="scripts/getdates.js"></script>
 </body>
+
 </html>

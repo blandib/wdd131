@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Encode+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+    --primary-color: #000000;
+    --secondary-color: #fa255e;
+    --accent-color: #c39ea0;
+    --background-color: #f8e5e5;
+}
+body {
+    text-align: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f8e5e5;
+    font-family:  Edu QLD Beginner;
+    
+}
+
+
+h1 {
+    background-color: #c39ea0;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #fa255e;
+}
+nav {
+    background-color: #000000;
+    margin: 0 auto;
+	max-width: 950px;
+    padding: 1.5rem;
+    
+}
+nav a {
+    text-decoration: none;
+    color: #fa255e;
+    font-size: 20px;
+    text-align: center;
+	padding: 2rem;
+
+}
+ul {
+    
+    list-style: none;
+}
+nav ul {
+    display: flex;
+    height: 50px;
+    gap: 15px;
+}
+nav ul li {
+    flex: 1 0 auto;
+   
+}
+nav a:hover {
+    background-color: #f8e5e5;
+    border-radius: 10px;
+}
+h2 {
+    background-color: #c39ea0;
+    font-size: 1.5rem;
+    height: 40px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns: First takes 2 fractions, second takes 1 */
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 5px 10px 10px #000000;
+    
+
+}
+
+.left-column {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two rows: one on top, one on bottom */
+    
+}
+.mypicture {
+    float: right;
+    box-shadow: 2px 5px 5px #fa255e;
+    padding: 1.5rem;
+    margin: 30px;
+    width: 200px;
+}
+h3 {
+    text-decoration: underline;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+.right-column {
+    border: 5px #fa255e;
+    /*padding: 1.5rem;*/
+    display: flex;
+    flex-direction: column;
+}
+.right-column a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    padding: 2rem;
+    align-self: flex-end;
+}
+.right-column ul {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+}
+
+.right-column li {
+    margin-bottom: 30px; /*  space between each item */
+}
+
+/*.top, .bottom {
+    padding: 20px;
+    border: 1px solid #ccc;
+}*/
+.Flag {
+    float: left;
+    padding: 1.5rem;
+    margin: 30px;
+    width: 200px;
+}
+footer {
+    background-color: #c39ea0;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #fa255e;
+}
+.paragraph {
+    font-size: 20px;
+    padding: 1.5rem;
+    
+}
+main {
+    height: 900px;
+}
