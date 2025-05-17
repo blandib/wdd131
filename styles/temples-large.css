@@ -1,0 +1,25 @@
+@media (min-width: 37.5em) {
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    text-align: left;
+  }
+  
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: row;
+    position: static;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 0 1 auto;
+  }
+  
+  .stuff {
+    margin: 1rem auto;
+  }
+}
