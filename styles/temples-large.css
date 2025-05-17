@@ -22,4 +22,19 @@
   .stuff {
     margin: 1rem auto;
   }
+  #menu {
+    display: block;
+  }
+  
+  nav ul:not(.navigation) {
+    display: none;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
 }
