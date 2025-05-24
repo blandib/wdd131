@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country page</title>
+    <meta name="description" content="This page will utilize a 'hamburger' menu and respond to user requests.">
+    <meta name="author" content="Blandine Bukasa Lusamba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="week3/styles/small.css">
+    <link rel="stylesheet" href="week3/styles/larger.css">
+  </head>
+<body>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <header><h1>South Africa</h1></header>
+    <main>
+        <div  class="image-container">
+
+            <picture>
+    <source srcset="/images/blyde-river-canyon.webp" media="(min-width: 1024px)">
+    <source srcset="/images/blyde-river-canyon.webp" media="(min-width: 768px)">
+    <img src="/images/blyde-river-canyon.webp" alt="Hero image of South Africa showcasing iconic landmarks">
+</picture>
+        <section class="overlay-text">
+    <h2>DATA</h2>
+    <p><strong>Area:</strong> 1,221,037 km²</p>
+    <p><strong>Population:</strong> 64,602,223</p>
+    <p><strong>Capital:</strong> Pretoria</p>
+    <p><strong>Languages:</strong> Zulu, Afrikaans, English, Northern Sotho, Southern Ndebele, Southern Sotho, Swazi, Tsonga, Tswana, Venda, Xhosa</p>
+    <p><strong>Currency:</strong> South African Rand (ZAR)</p>
+    <p><strong>Time Zone:</strong> UTC+2</p>
+    <p><strong>Calling Code:</strong> +27</p>
+    <p><strong>Internet TLD:</strong> .za</p>
+</section>
+
+<section class="content-wrapper" id="second-text">
+    <h2 class="weather-heading">Weather</h2>
+    <div class="icon">
+    <img  src="/images/1530374_weather_day_sand_sandstorm_sun_icon.svg" alt="Weather Icon" class="weather-icon">
+    <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+    </div>
+    <p><strong>Condition:</strong> <span id="condition">Cloudy</span></p>
+    <p><strong>Wind Speed:</strong> <span id="windSpeed">10</span> km/h</p>
+    <p><strong>Wind Chill:</strong> <span id="windchill">Calculating...</span></p>
+</section>
+
+        </div>
+    </main>
+    <footer><p>&copy; <span id="currentyear"></span> Blandine Bukasa Lusamba | South Africa</p>
+        <p id="lastModified"></p></footer>
+</body>
+</html>

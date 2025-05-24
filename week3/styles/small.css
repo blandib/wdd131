@@ -1,0 +1,37 @@
+/* ====== Mobile Responsive Styles (600px or less) ====== */
+
+@media only screen and (max-width: 600px) {
+    .image-container {
+        position: relative !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 20px !important;
+        overflow: hidden !important; 
+    }
+
+    .image-container img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+    .overlay-text, #second-text {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 15px !important;
+        background: rgba(0, 0, 0, 0.7) !important;
+        box-sizing: border-box !important;
+    }
+
+    .content-wrapper {
+        display: block !important;
+        align-items: center !important;
+    }
+}
