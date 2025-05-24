@@ -2,6 +2,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: black;
+    --secondary-color: green;
+    --font-size: 20px;
+}
 body {
     max-width: 1100px;
     background-color: beige;
