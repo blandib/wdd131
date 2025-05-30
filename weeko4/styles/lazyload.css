@@ -1,0 +1,154 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+}
+
+.card {
+    width: 80%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+img.lazy-loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Caption styling */
+figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 5px;
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        filter: brightness(0);
+    }
+    50% {
+        opacity: 0.5;
+        filter: brightness(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: brightness(1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes spinReveal {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Apply different animations to each image */
+img:nth-child(odd) {
+    animation: fadeUp 1.5s ease-in-out forwards;
+}
+
+img:nth-child(even) {
+    animation: bounceIn 1.5s ease-in-out forwards;
+}
+
+img:last-child {
+    animation: spinReveal 1.5s ease-in-out forwards;
+}
+/* Responsive Design Tweaks */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

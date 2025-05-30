@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Filter Temples</title>
+    <meta name="description" content="This page will utilize a 'hamburger' menu and respond to user requests.">
+    <meta name="author" content="Blandine Bukasa Lusamba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples-small.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  </head>
+<body>
+    <header>
+  <h1>Filter Temple</h1>
+  <nav>
+    <button id="menu"></button>
+	<ul class="navigation" aria-label="Main Navigation">
+    <li><a id="menu-home" href="#">Home</a></li>
+    <li><a id="menu-old" href="#">Old</a></li>
+    <li><a id="menu-new" href="#">New</a></li>
+    <li><a id="menu-large" href="#">Large</a></li>
+    <li><a id="menu-small" href="#">Small</a></li>
+</ul>
+
+  </nav>
+</header>
+<main>
+  <h2 class="home-page">Home</h2>
+<div id="templeCards"></div>
+</main>
+
+<footer> <p>&copy; <span id="currentyear"></span> Blandine Bukasa Lusamba | South Africa</p>
+        <p id="lastModified"></p></footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+
+
+    
+</body>
+</html>
