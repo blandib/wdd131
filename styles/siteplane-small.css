@@ -1,0 +1,21 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .siteplane div {
+        width: 90%;
+    }
+
+    .color-box {
+        width: 30px;
+        height: 30px;
+    }
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .Schema-color {
+        grid-template-columns: 1fr;
+    }
+
+    .color-box {
+        height: 80px;
+    }
+}
