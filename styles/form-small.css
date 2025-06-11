@@ -1,0 +1,192 @@
+body {
+    text-align: center;
+    width: 500px;
+    justify-content: center;
+    margin: auto;
+    
+}
+h1 {
+    background-color: #3b033b;
+    color: #eee;
+    padding: 2rem;
+}
+.form-style {
+    background-color: #a05ea0;
+    height: 820px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+.form-style input[type="text"],
+.form-style input[type="submit"],
+.form-style input[type="date"],
+.form-style select
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+.form-style input[type="radio"]
+{
+    margin-right: 6px;
+    gap: 10px;
+}
+.form-style .label1, legend {
+    display: block;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.form-style fieldset {
+  
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+label {
+    display: block; /* Makes each checkbox label appear on a new line */
+    font-size: 1rem ; 
+    cursor: pointer;
+}
+.form-style, .label1, legend {
+    text-align: start;
+    font-size: 1rem;
+}
+.form-style
+
+
+
+
+
+
+
+fieldset {
+    border: none;
+    display: flex; /* Aligns labels in a row */
+    
+}
+
+label {
+    display: flex;
+    flex-direction: column-reverse; /* Places star above radio button */
+    align-items: center; /* Centers the content */
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+  
+    width: 22px;
+    height: 22px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.2s;
+}
+/* Fieldset reset */
+.form-style fieldset {
+  border: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+/* One-column container */
+.form-style fieldset .one-column {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Legend styling - must come first in fieldset */
+.form-style fieldset .one-column legend {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #000;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Checkbox label styling */
+.form-style fieldset .one-column label {
+  display: flex;
+  align-items: start;
+  gap: 8px; /* Space between checkbox and text */
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0;
+  padding: 2px 0;
+}
+
+/* Default checkbox styling */
+.form-style fieldset .one-column input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevents checkbox from shrinking */
+}
+
+#review {
+    width: 400px;
+    height: 100px;
+}
+
+
+
+.form-style input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#3b033b, #eee);
+    color: #000000;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 3rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+footer {
+    background-color: #3b033b;
+    color: #eee;
+    padding: 2rem;
+}
+fieldset {
+    border: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column-reverse; /* Moves the star above the radio button */
+    align-items: center; /* Centers the content */
+    font-size: 1rem; 
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    appearance: none; /* Hides the default radio button */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #444;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="radio"]:checked {
+    background-color: #444; /* Adds a background when selected */
+}
+.star {
+    gap: 10px;
+
+}

@@ -1,0 +1,32 @@
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .form-style {
+    padding: 1rem;
+  }
+  
+  .form-style input[type="submit"] {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  
+  .form-style .one-column label {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0 0.5rem;
+  }
+  
+  .form-style {
+    height: auto;
+    padding: 0.5rem;
+  }
+  
+  .form-style input[type="checkbox"],
+  .form-style input[type="radio"] {
+    width: 14px;
+    height: 14px;
+  }
+}

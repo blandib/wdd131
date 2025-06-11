@@ -2,30 +2,55 @@ const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
+// Initialize chaptersArray with existing data or an empty array
+let chaptersArray = getChapterList() || [];
+
+// Populate existing chapters on load
+chaptersArray.forEach(chapter => displayList(chapter));
+
+// Button event listener
 button.addEventListener("click", function () {
-  if (input.value.trim() !== "") {
-    // Create new elements inside the event listener
-    const li = document.createElement("li");
-    const deleteButton = document.createElement("button");
+    if (input.value.trim() !== "") {
+        displayList(input.value);
+        chaptersArray.push(input.value);
+        setChapterList();
+        input.value = "";
+        input.focus();
+    }
+});
 
-    // Populate elements
-    li.textContent = input.value;
+// Function to display a chapter with a delete button
+function displayList(item) {
+    let li = document.createElement("li");
+    let deleteButton = document.createElement("button");
+
+    li.textContent = item;
     deleteButton.textContent = "❌";
-    deleteButton.classList.add("delete"); // Optional: Add a class for styling
+    deleteButton.classList.add("delete");
 
-    // Append delete button to li
     li.append(deleteButton);
-    // Append li to the list
     list.append(li);
 
-    // Add event listener to delete the item when button is clicked
+    // Delete functionality
     deleteButton.addEventListener("click", function () {
-      list.removeChild(li);
-      input.focus();
+        list.removeChild(li);
+        deleteChapter(item);
+        input.focus();
     });
+}
 
-    // Clear input and refocus
-    input.value = "";
-    input.focus();
-  }
-});
+// Function to update localStorage
+function setChapterList() {
+    localStorage.setItem("myFavBOMList", JSON.stringify(chaptersArray));
+}
+
+// Function to retrieve chapters from localStorage
+function getChapterList() {
+    return JSON.parse(localStorage.getItem("myFavBOMList"));
+}
+
+// Function to delete a chapter from the array & localStorage
+function deleteChapter(chapter) {
+    chaptersArray = chaptersArray.filter(item => item !== chapter);
+    setChapterList();
+}
