@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Profiles & Community</title>
+    <meta name="description" content="This page will utilize a 'hamburger' menu and respond to user requests.">
+    <meta name="author" content="Blandine Bukasa Lusamba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Encode+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="../styles/recipeledger.css">
+    <link rel="stylesheet" href="../styles/smallerrecipe.css">
+</head>
+<header class="navbar">
+    <img src="/images/recipeledger-logo.png" alt="logo" class="logo" loading="lazy">
+         <nav>
+            <ul class="nav-links">
+                <li><a class="nar-bar" href="recipeledger.html">Home</a></li>
+                <li><a class="nar-bar" href="recipecatalog.html">Catalog & Recipe</a></li>
+                <li><a class="nar-bar" href="community.html">Profiles & Community</a></li>
+            </ul>
+         </nav>
+</header>
+<body>
+   <main  class="section">
+
+  <section id="hero">
+  <h1>🍽️ Welcome to Recipe Ledger</h1>
+  <p>Discover, Cook, Share — delicious recipes at your fingertips.</p>
+  <img src="https://www.harighotra.co.uk/images/recipes/hero/capemalay_hero.png" alt="Cape Malay Chicken Curry">
+</section>
+<!-- Favorites Button -->
+  <button id="favoritesBtn">Show Favorites</button>
+  <ul id="favoritesList" style="display: none;"></ul>
+
+  <!-- Comment Form -->
+  <form id="commentForm">
+    <h3>Leave a Comment</h3>
+    <textarea required></textarea>
+    <button type="submit">Post</button>
+  </form>
+
+  <!-- Contact Form -->
+  <form id="contactForm">
+    <h3>Contact Us</h3>
+    <input type="text" placeholder="Your name" required />
+    <input type="email" placeholder="Your email" required />
+    <textarea placeholder="Message or recipe" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- Cooking Tips Section -->
+  <section id="cookingTips">
+    <h2>Cooking Tips</h2>
+    <article>
+      <h4>Season Like a Pro</h4>
+      <p>Always taste and adjust—flavor builds in layers.</p>
+    </article>
+    <article>
+      <h4>Prep Before Cooking</h4>
+      <p>Chop, measure, and organize everything first—it makes the process smoother.</p>
+    </article>
+  </section>
+</main>
+
+     <footer>
+        <nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="recipeledger.html">Home</a></li>
+        <li><a href="recipecatalog.html">Catalog & Recipe</a></li>
+        <li><a href="community.html">Profiles & Community</a></li>
+       
+    </ul>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="../images/facebook-icon-webp.jpg" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="../images/xx.png" alt="x"></a>
+    </div>
+</nav>
+
+        <p>&copy; <span id="currentyear"></span> Blandine Bukasa Lusamba | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="../scripts/recipeledger.js"></script>
+    <script src="../scripts/community.js"></script>
+</body>
+</html>

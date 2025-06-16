@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Recipe Ledger</title>
+    <meta name="description" content="This page will utilize a 'hamburger' menu and respond to user requests.">
+    <meta name="author" content="Blandine Bukasa Lusamba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Encode+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="../styles/recipeledger.css">
+</head>
+<header class="navbar">
+    <img src="/images/recipeledger-logo.png" alt="logo" class="logo" loading="lazy">
+         <nav>
+            <ul class="nav-links">
+                <li><a class="nar-bar" href="recipeledger.html">Home</a></li>
+                <li><a class="nar-bar" href="recipecatalog.html">Catalog & Recipe</a></li>
+                <li><a class="nar-bar" href="community.html">Profiles & Community</a></li>
+            </ul>
+         </nav>
+</header>
+<body>
+    <main>
+        <h1>Welcome to  Recipe Ledger ! Discover, Cook, Share - Delicious Recipes at Your Fingertips.</h1>
+        <section class="hero-action">
+            <div class="recipe-container">
+            <div class="recipe-card">
+            <img class="hero" src="https://www.cookingclassy.com/wp-content/uploads/2020/10/spaghetti-carbonara-01-1024x1536.jpg" alt="Delicious Pasta" class="recipe-image">
+            <div class="overlay">
+             <div class="text-content">
+            <h2>Cook Like a Pro, Effortlessly!</h2>
+             <p class="text">Master every dish with easy-to-follow recipes and expert tips.</p>
+             <a href="recipecatalog.html" class="cta">Start Exploring</a>
+             </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="search-container">
+    <input type="text" id="search" placeholder="Search for recipes, ingredients, or cuisines..." />
+
+    <!-- Filter Icons/Dropdowns -->
+    <div class="filters">
+        <select id="totalTime">
+            <option value="">🕒 Time</option>
+            <option value="30">Under 30 min</option>
+            <option value="60">1 hour</option>
+        </select>
+
+        <select id="dietary">
+            <option value="">🌱 Dietary</option>
+            <option value="vegan">Vegan</option>
+            <option value="keto">Keto</option>
+            <option value="vegetarian">vegetarian</option>
+        </select>
+
+        <select id="cuisine">
+            <option value="">🌍 Cuisine</option>
+            <option value="italian">Italian</option>
+            <option value="mexican">Mexican</option>
+            <option value="asian">Asian</option>
+        </select>
+    </div>
+</div>
+        </section>
+        <section>
+           <div id="recipes-container"    class="grid-container">
+    <div class="recipe-card" data-time="25" data-dietary="none" data-cuisine="italian">
+        <img src="https://www.cookingclassy.com/wp-content/uploads/2023/05/garlic-parmesan-pasta-3.jpg" alt="Creamy Garlic Pasta">
+        <h3>Creamy Garlic Pasta</h3>
+        <p>⭐ 4.9 | 🕒 25 min | <span class="save-btn">♡ Save</span></p>
+        <a href="recipecatalog.html" class="view-btn">View Recipe</a>
+    </div>
+    <div class="recipe-card" data-time="45" data-dietary="vegetarian" data-cuisine="south-african">
+        <img src="https://louskitchencorner.freybors.com/wp-content/uploads/2020/07/bunny-chow.png" alt="bunny-chow">
+        <h3>Bunny Chow</h3>
+        <p>⭐ 4.9 | 🕒 45 min | <span class="save-btn">♡ Save</span></p>
+        <a href="recipecatalog.html" class="view-btn">View Recipe</a>
+    </div>
+    <div class="recipe-card" data-time="20" data-dietary="none" data-cuisine="mexican">
+        <img src="https://www.dinneratthezoo.com/wp-content/uploads/2018/05/ground-beef-tacos-2.jpg" alt="beef tacos">
+        <h3>Beef Tacos</h3>
+        <p>⭐ 4.9 | 🕒 20 min | <span class="save-btn">♡ Save</span></p>
+        <a href="recipecatalog.html" class="view-btn">View Recipe</a>
+    </div>
+    <div class="recipe-card" data-time="30" data-dietary="vegetarian" data-cuisine="french">
+        <img src="https://www.cookingclassy.com/wp-content/uploads/2022/02/molten-lava-cake-17-768x1152.jpg" alt="Chocolate lava cake">
+        <h3>Chocolate Lava Cake</h3>
+        <p>⭐ 4.9 | 🕒 30 min |  <span class="save-btn">♡ Save</span></p>
+        <a href="recipecatalog.html" class="view-btn">View Recipe</a>
+    </div>
+</div>
+        </section>
+        <section>
+            <div class="about-content">
+            <div class="about-site">
+                <h2> Recipe Ledger</h2>
+                <p>At Recipe Ledger, we test every recipe to ensure it's simple, delicious, and works every time.
+                Whether you're a beginner or a seasoned cook, our step-by-step guides make it easy to create meals you'll love</p>
+            </div>
+            <div class="about-site">
+                <h2>Why Us</h2>
+                <p>Kitchen-Tested Recipes - Every dish is tried and perfected for reliable results. 🥑 Dietary-Friendly Options - 
+                    Find recipes for Vegan, Keto, Gluten-Free, and more</p>
+            </div>
+            <div class="about-site">
+                <h2>🗨️ Community Tips & Reviews</h2>
+                <p>Get real feedback, share cooking hacks, and connect with fellow food lovers.</p>
+                <div class="community-section">
+                <h2>👉 Join Our Community!</h2>
+              <p>Get exclusive recipes, cooking tips, and personalized recommendations.</p>
+              <a href="signup.html" class="cta-button">Sign Up Now</a></div>
+            </div>
+            </div>
+        </section>
+        <section class="quick-links">
+    <h2>🔎 Explore More Recipes</h2>
+    <div class="link-container">
+        <a href="recipecatalog.html">🍳 Easy Breakfast Ideas</a>
+        <a href="recipecatalog.html">🥗 Healthy Lunch Recipes</a>
+        <a href="recipecatalog.html">🍝 30-Minute Dinners</a>
+        <a href="recipecatalog.html">🍰 Popular Desserts</a>
+    </div>
+</section>
+    </main>
+     <footer>
+        <nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="recipeledger.html">Home</a></li>
+        <li><a href="recipecatalog.html">Catalog & Recipe</a></li>
+        <li><a href="">Profiles & Community</a></li>
+       
+    </ul>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="../images/facebook-icon-webp.jpg" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="../images/xx.png" alt="x"></a>
+    </div>
+</nav>
+
+        <p>&copy; <span id="currentyear"></span> Blandine Bukasa Lusamba | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="../scripts/recipeledger.js"></script>
+</body>
+</html>
